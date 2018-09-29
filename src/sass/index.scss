@@ -22,6 +22,7 @@ body {
     background-color: #f7f7f7;
 }
 
+
 .wrapper {
     width: 1200px;
     margin: 0 auto;
@@ -94,6 +95,11 @@ body {
     padding: 0 15px;
     line-height: 46px;
 }
+.column-box{
+    float: left;
+    width: 594px;
+    margin-left: 12px;
+}
 
 .con-list .item{
     float: left;
@@ -111,6 +117,49 @@ body {
     padding: 10px 14px;
 }
 
+.tl{
+    float: left;
+    font-size: 18px;
+    color: #fff;
+}
+
+
+.column-hd-tab{
+    float: right;
+    margin: 10px 5px 0 0;
+    .tab-btn{
+        float: left;
+        height: 22px;
+        margin-left: 28px;
+        line-height: 22px;
+        font-size: 14px;
+        color: #fff;
+        cursor: pointer;
+    }
+    .active{
+        border-bottom: 3px solid white;
+    }
+}
+
+.column-con{
+    background-color: #fff;
+}
+
+.con-list .item {
+    float: left;
+    width: 160px;
+    height: 260px;
+    padding: 0 19px;
+}
+
+
+
+
+
+
+
+
+
 //团购
 .groupbuy{
     .section-header{
@@ -124,12 +173,128 @@ body {
         padding-left: 39px;
         background-position: -138px -345px;
     }
+    .noopsyche-inner{
+        padding: 20px;
+        background: #fff;
+    }
+    .noopsyche-focus{
+        float: left;
+        width: 731px;
+        height: 235px;
+    }
+    .noopsyche-focus-tab{
+        float: left;
+        width: 101px;
+        overflow: hidden;
+        li{
+            height: 47px;
+            margin: -1px 0 0;
+            border-top: 1px solid #fff;
+            background: #ececec;
+            font-size: 16px;
+            line-height: 48px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .bgchange{
+            background: #ce1a1b;
+            color: #fff;
+        }
+    }
+    .noopsyche-focus-pics{
+        float: left;
+        width: 630px;
+        height: 235px;
+        overflow: hidden;
+    }
+    .noopsyche-focus-pics{
+        li{
+            display: none;
+        }
+        .dischange{
+            display: block;
+        }
+    }
+    .noopsyche-pics{
+        float: right;
+        width: 428px;
+        a{
+            float: left;
+            overflow: hidden;
+            zoom: 1;
+        }
+        img{
+            vertical-align: middle;
+            width: 214px;
+            height: 235px;
+        }
+        .bigimg{
+            width: 428px;
+            height: 182px;
+        }
+    }
+    .noopsyche-list{
+        float: left;
+        li{
+            position: relative;
+            float: left;
+            width: 182px;
+            height: 182px;
+            margin: 0 1px 0 0;
+            overflow: hidden;
+            img{
+                width: 182px;
+                height: 182px;
+            }
+        }
+    }
 }
 
 //品牌精选
 .brandchoice{
     .section-header{
         background-position: -138px -125px;
+    }
+    .brandchoice_list{
+        margin-left: -12px;
+        .item{
+            float: left;
+            width: 200px;
+            height: 300px;
+            padding: 20px 15px;
+            margin-left: 12px;
+            text-align: center;
+            background-color: #fff;
+        }
+        .first{
+            width: 230px;
+            height: 340px;
+            padding: 0;
+        }
+        .pic{
+            display: block;
+            margin-bottom: 22px;
+            img{
+                width: 200px;
+                height: 200px;
+            }
+        }
+        .ware-name{
+            height: 30px;
+            line-height: 30px;
+            font-size: 14px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .ware-price{
+            height: 30px;
+            line-height: 30px;
+            font-size: 14px;
+            span{
+                color: #f33;
+            }
+        }
     }
 }
 
@@ -138,14 +303,82 @@ body {
     .section-header{
         background-position: -135px -167px;
     }
+    .game-inner{
+        margin-left: -12px;
+    }
+    .game-hot{
+        .column-hd{
+            background-color: #7095ee;
+        }
+    }
+    .game-diy{
+        .column-hd{
+            background-color: #9b74e9;
+        }
+    }
 }
 
 //家电优选
 .homeappliance{
+    .homeappliance-inner{
+        margin-left: -12px;
+    }
     .section-header{
         background-position: -142px -385px;
     }
+    .homeappliance-left{
+        float: left;
+        width: 594px;
+        background-color: #fff;
+        .column_brand-list{
+            margin-top: -1px;
+        }
+        .column_brand-item{
+            border-top: 1px solid #f7f7f7;
+        }
+        .ban-pager{
+            position: absolute;
+            left: 0;
+            bottom: 15px;
+            width: 100%;
+            text-align: center;
+            .pager-item{
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                margin: 0 4px;
+                a{
+                    display: block;
+                    width: 10px;
+                    height: 10px;
+                    font-size: 0;
+                    line-height: 0;
+                    background-color: #000;
+                    opacity: .6;
+                    filter: alpha(opacity=60);
+                    border-radius: 50%;
+                }
+                .bgred{
+                    background-color: #f00;
+                    opacity: 1;
+                    filter: alpha(opacity=100);
+                }
+            }
+        }
+        .homeappliance-banner{
+            height: 398px;
+            position: relative;
+            width: 594px;
+            overflow: hidden;
+        }
+        .homeappliance-brand{
+            overflow: hidden;
+        }
+    }
     .homeappliance-right{
+        float: left;
+        width: 594px;
+        margin-left: 12px;
         .column-hd{
             background-color: #e78c94;
         }
@@ -156,22 +389,6 @@ body {
         }
         .tab-con{
             display: none;
-        }
-        .column-hd-tab{
-            float: right;
-            margin: 10px 5px 0 0;
-            .tab-btn{
-                float: left;
-                height: 22px;
-                margin-left: 28px;
-                line-height: 22px;
-                font-size: 14px;
-                color: #fff;
-                cursor: pointer;
-            }
-            .active{
-                border-bottom: 3px solid white;
-            }
         }
     }
 }
@@ -193,11 +410,6 @@ body {
         .column-hd{
             background-color: #eb9e74;
         }
-    }
-    h5{
-        float: left;
-        font-size: 18px;
-        color: #fff;
     }
     .d-more{
         float: right;
@@ -221,9 +433,6 @@ body {
             vertical-align: top;
             font-style: normal;
         }
-    }
-    .digital-con{
-        background-color: #fff;
     }
     .digital-brand{
         border-top: 1px solid #f7f7f7;

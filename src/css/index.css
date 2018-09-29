@@ -834,6 +834,12 @@ body {
   line-height: 46px;
 }
 
+.column-box {
+  float: left;
+  width: 594px;
+  margin-left: 12px;
+}
+
 .con-list .item {
   float: left;
   width: 160px;
@@ -850,6 +856,40 @@ body {
   padding: 10px 14px;
 }
 
+.tl {
+  float: left;
+  font-size: 18px;
+  color: #fff;
+}
+
+.column-hd-tab {
+  float: right;
+  margin: 10px 5px 0 0;
+}
+.column-hd-tab .tab-btn {
+  float: left;
+  height: 22px;
+  margin-left: 28px;
+  line-height: 22px;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+}
+.column-hd-tab .active {
+  border-bottom: 3px solid white;
+}
+
+.column-con {
+  background-color: #fff;
+}
+
+.con-list .item {
+  float: left;
+  width: 160px;
+  height: 260px;
+  padding: 0 19px;
+}
+
 .groupbuy .section-header {
   background-position: -137px 3px;
 }
@@ -858,17 +898,197 @@ body {
   padding-left: 39px;
   background-position: -138px -345px;
 }
+.noopsyche .noopsyche-inner {
+  padding: 20px;
+  background: #fff;
+}
+.noopsyche .noopsyche-focus {
+  float: left;
+  width: 731px;
+  height: 235px;
+}
+.noopsyche .noopsyche-focus-tab {
+  float: left;
+  width: 101px;
+  overflow: hidden;
+}
+.noopsyche .noopsyche-focus-tab li {
+  height: 47px;
+  margin: -1px 0 0;
+  border-top: 1px solid #fff;
+  background: #ececec;
+  font-size: 16px;
+  line-height: 48px;
+  text-align: center;
+  cursor: pointer;
+}
+.noopsyche .noopsyche-focus-tab .bgchange {
+  background: #ce1a1b;
+  color: #fff;
+}
+.noopsyche .noopsyche-focus-pics {
+  float: left;
+  width: 630px;
+  height: 235px;
+  overflow: hidden;
+}
+.noopsyche .noopsyche-focus-pics li {
+  display: none;
+}
+.noopsyche .noopsyche-focus-pics .dischange {
+  display: block;
+}
+.noopsyche .noopsyche-pics {
+  float: right;
+  width: 428px;
+}
+.noopsyche .noopsyche-pics a {
+  float: left;
+  overflow: hidden;
+  zoom: 1;
+}
+.noopsyche .noopsyche-pics img {
+  vertical-align: middle;
+  width: 214px;
+  height: 235px;
+}
+.noopsyche .noopsyche-pics .bigimg {
+  width: 428px;
+  height: 182px;
+}
+.noopsyche .noopsyche-list {
+  float: left;
+}
+.noopsyche .noopsyche-list li {
+  position: relative;
+  float: left;
+  width: 182px;
+  height: 182px;
+  margin: 0 1px 0 0;
+  overflow: hidden;
+}
+.noopsyche .noopsyche-list li img {
+  width: 182px;
+  height: 182px;
+}
 
 .brandchoice .section-header {
   background-position: -138px -125px;
+}
+.brandchoice .brandchoice_list {
+  margin-left: -12px;
+}
+.brandchoice .brandchoice_list .item {
+  float: left;
+  width: 200px;
+  height: 300px;
+  padding: 20px 15px;
+  margin-left: 12px;
+  text-align: center;
+  background-color: #fff;
+}
+.brandchoice .brandchoice_list .first {
+  width: 230px;
+  height: 340px;
+  padding: 0;
+}
+.brandchoice .brandchoice_list .pic {
+  display: block;
+  margin-bottom: 22px;
+}
+.brandchoice .brandchoice_list .pic img {
+  width: 200px;
+  height: 200px;
+}
+.brandchoice .brandchoice_list .ware-name {
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.brandchoice .brandchoice_list .ware-price {
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+}
+.brandchoice .brandchoice_list .ware-price span {
+  color: #f33;
 }
 
 .game .section-header {
   background-position: -135px -167px;
 }
+.game .game-inner {
+  margin-left: -12px;
+}
+.game .game-hot .column-hd {
+  background-color: #7095ee;
+}
+.game .game-diy .column-hd {
+  background-color: #9b74e9;
+}
 
+.homeappliance .homeappliance-inner {
+  margin-left: -12px;
+}
 .homeappliance .section-header {
   background-position: -142px -385px;
+}
+.homeappliance .homeappliance-left {
+  float: left;
+  width: 594px;
+  background-color: #fff;
+}
+.homeappliance .homeappliance-left .column_brand-list {
+  margin-top: -1px;
+}
+.homeappliance .homeappliance-left .column_brand-item {
+  border-top: 1px solid #f7f7f7;
+}
+.homeappliance .homeappliance-left .ban-pager {
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+  width: 100%;
+  text-align: center;
+}
+.homeappliance .homeappliance-left .ban-pager .pager-item {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 4px;
+}
+.homeappliance .homeappliance-left .ban-pager .pager-item a {
+  display: block;
+  width: 10px;
+  height: 10px;
+  font-size: 0;
+  line-height: 0;
+  background-color: #000;
+  opacity: .6;
+  filter: alpha(opacity=60);
+  border-radius: 50%;
+}
+.homeappliance .homeappliance-left .ban-pager .pager-item .bgred {
+  background-color: #f00;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.homeappliance .homeappliance-left .homeappliance-banner {
+  height: 398px;
+  position: relative;
+  width: 594px;
+  overflow: hidden;
+}
+.homeappliance .homeappliance-left .homeappliance-brand {
+  overflow: hidden;
+}
+.homeappliance .homeappliance-right {
+  float: left;
+  width: 594px;
+  margin-left: 12px;
 }
 .homeappliance .homeappliance-right .column-hd {
   background-color: #e78c94;
@@ -878,22 +1098,6 @@ body {
 }
 .homeappliance .homeappliance-right .tab-con {
   display: none;
-}
-.homeappliance .homeappliance-right .column-hd-tab {
-  float: right;
-  margin: 10px 5px 0 0;
-}
-.homeappliance .homeappliance-right .column-hd-tab .tab-btn {
-  float: left;
-  height: 22px;
-  margin-left: 28px;
-  line-height: 22px;
-  font-size: 14px;
-  color: #fff;
-  cursor: pointer;
-}
-.homeappliance .homeappliance-right .column-hd-tab .active {
-  border-bottom: 3px solid white;
 }
 
 .digital .section-header {
@@ -907,11 +1111,6 @@ body {
 }
 .digital .digital-right .column-hd {
   background-color: #eb9e74;
-}
-.digital h5 {
-  float: left;
-  font-size: 18px;
-  color: #fff;
 }
 .digital .d-more {
   float: right;
@@ -935,9 +1134,6 @@ body {
   font-family: simsun;
   vertical-align: top;
   font-style: normal;
-}
-.digital .digital-con {
-  background-color: #fff;
 }
 .digital .digital-brand {
   border-top: 1px solid #f7f7f7;
