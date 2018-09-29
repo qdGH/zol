@@ -1,0 +1,101 @@
+.b-wrapper{
+    position: relative;
+    overflow: hidden;
+}
+.b-viewport ul li{
+    position: absolute; left:0; top: 0; opacity: 0;width: 1920px;
+}
+.b-viewport .focus-list{
+    overflow: hidden; height: 400px;
+}
+.focus-list a img {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+.b-box .b-prev {
+    left: 50%;
+    background-position: left -94px;
+    margin: -47px 0 0 -662px;
+}
+
+.b-box .b-next {
+    right: 50%;
+    background-position: left top;
+    margin: -47px -662px 0 0;
+}
+
+.b-box .b-prev, .b-box .b-next {
+    position: absolute;
+    top: 50%;
+    width: 62px;
+    height: 94px;
+    z-index: 100;
+}
+
+.b-box .b-prev .bg-mask, .b-box .b-next .bg-mask {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 62px;
+    height: 94px;
+    background-color: #000;
+    opacity: .5;
+    filter: alpha(opacity = 50);
+}
+
+.b-box .b-prev .arrow, .b-box .b-next .arrow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 62px;
+    height: 94px;
+    background: url(http://icon.zol-img.com.cn/newshop/shop/index/arrow.png) no-repeat;
+}
+
+.b-box .b-prev .arrow {
+    background-position: left -94px;
+}
+
+.b-box .b-next .arrow {
+    background-position: left top;
+}
+
+.b-box .b-pager {
+    position: absolute;
+    z-index: 51;
+    left: 50%;
+    bottom: 10px;
+    width: 1200px;
+    height: 10px;
+    margin: 0 0 0 -600px;
+    overflow: hidden;
+    font: 0/0 arial;
+    text-align: center;
+    text-indent: 1px;
+}
+
+.b-box .b-pager-item {
+    margin: 0 3px 0 2px;
+    text-indent: 0;
+    display: inline;
+}
+
+.b-box .b-pager-item a {
+    border-radius: 5px;
+    background-color: #f6f6f6;
+}
+
+.b-box .b-pager-item .active {
+    background-color: #ce1a1b;
+}
+
+.b-box .b-pager-item, .b-box .b-pager-item a {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    vertical-align: top;
+    font: 0/0 arial;
+    overflow: hidden;
+}

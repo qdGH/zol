@@ -1,0 +1,268 @@
+@charset "utf-8";
+@import "header";
+@import "footer";
+@import "banner";
+
+$font-color:#333;
+$font-color2:#666;
+
+body,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,th,td,p,blockquote,pre,form,fieldset,legend,input,button,textarea,hr{ margin:0;padding:0;}
+body{ font:12px/1.5 "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1"; color:#333;}
+select,input,button{ vertical-align:middle;font-size:100%;}
+ul,ol{ list-style:none;}
+fieldset,img{ border:0;}
+em{ font-style:normal;}
+.clearfix:after{ content:"."; display:block; visibility:hidden; clear:both; height:0; font-size:0;}
+.clearfix{ *zoom:1;}
+
+a{ color:#333; text-decoration:none;}
+a:hover{ color:#f33; text-decoration:underline;}
+
+body {
+    background-color: #f7f7f7;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.groupbuy,
+.noopsyche,
+.brandchoice,
+.game,
+.homeappliance,
+.digital,
+.weeksellwell{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 34px 0 0;
+}
+
+.column-box{
+    float: left;
+    width: 594px;
+    margin-left: 12px;
+}
+
+.clearfix:after{
+    content: ".";
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    font-size: 0;
+}
+
+
+
+
+
+
+.section-header{
+    height: 36px;
+    margin: 0 0 10px;
+    padding: 0 0 0 40px;
+    line-height: 36px;
+    background: url(../images/zol-home-icons.png) no-repeat;
+    h3{
+        float: left;
+        margin: 0 10px 0 0;
+        font-size: 24px;
+        font-weight: 400;
+    }
+    span{
+        float: left;
+        margin: 8px 0 0;
+        font-size: 14px;
+        line-height: 28px;
+        color: #999;
+    }
+    .more{
+        float: right;
+        padding: 0 23px 0 0;
+        height: 36px;
+        overflow: hidden;
+        color: $font-color2;
+        line-height: 40px;
+        background: url(../images/zol-home-icons.png) no-repeat 100% -277px;
+    }
+}
+
+.column-hd{
+    height: 46px;
+    padding: 0 15px;
+    line-height: 46px;
+}
+
+.con-list .item{
+    float: left;
+    width: 160px;
+    height: 260px;
+    padding: 0 19px;
+    background-color: #fff;
+}
+
+.column_brand-item{
+    position: relative;
+    float: left;
+    width: 120px;
+    height: 60px;
+    padding: 10px 14px;
+}
+
+//团购
+.groupbuy{
+    .section-header{
+        background-position: -137px 3px;
+    }
+}
+
+//Z智选
+.noopsyche{
+    .section-header{
+        padding-left: 39px;
+        background-position: -138px -345px;
+    }
+}
+
+//品牌精选
+.brandchoice{
+    .section-header{
+        background-position: -138px -125px;
+    }
+}
+
+//电子竞技
+.game{
+    .section-header{
+        background-position: -135px -167px;
+    }
+}
+
+//家电优选
+.homeappliance{
+    .section-header{
+        background-position: -142px -385px;
+    }
+    .homeappliance-right{
+        .column-hd{
+            background-color: #e78c94;
+        }
+        .column-con{
+            .cur{
+                display: block;
+            }
+        }
+        .tab-con{
+            display: none;
+        }
+        .column-hd-tab{
+            float: right;
+            margin: 10px 5px 0 0;
+            .tab-btn{
+                float: left;
+                height: 22px;
+                margin-left: 28px;
+                line-height: 22px;
+                font-size: 14px;
+                color: #fff;
+                cursor: pointer;
+            }
+            .active{
+                border-bottom: 3px solid white;
+            }
+        }
+    }
+}
+
+//数码潮品
+.digital{
+    .section-header{
+        background-position: -141px -208px;
+    }
+    .digital-inner{
+        margin-left: -12px;
+    }
+    .digital-left{
+        .column-hd{
+            background-color: #3ccbbc;
+        }
+    }
+    .digital-right{
+        .column-hd{
+            background-color: #eb9e74;
+        }
+    }
+    h5{
+        float: left;
+        font-size: 18px;
+        color: #fff;
+    }
+    .d-more{
+        float: right;
+        height: 18px;
+        margin-top: 14px;
+        line-height: 18px;
+        color: #fff;
+        span{
+            font-size: 14px;
+            vertical-align: top;
+        }
+        .icon{
+            width: 16px; 
+            height: 16px;
+            border: 1px solid white;
+            border-radius: 8px;
+            display: inline-block;
+            text-align: center;
+            line-height: 16px;
+            font-family: simsun;
+            vertical-align: top;
+            font-style: normal;
+        }
+    }
+    .digital-con{
+        background-color: #fff;
+    }
+    .digital-brand{
+        border-top: 1px solid #f7f7f7;
+        overflow: hidden;
+        .line{
+            width:1px;
+            height: 20px;
+            position: absolute;
+            left: -1px; 
+            top: 50%;
+            margin-top: -10px;
+            background-color:  #e6e6e6;
+        }
+    }
+}
+
+//本周热销
+.weeksellwell{
+    .weeksellwell_hd{
+        height: 94px;
+        line-height: 94px;
+        text-align: center;
+        background: url(../images/digital-3c_hd.png) repeat-x left center;
+        span{
+            display: inline-block;
+            font-size: 24px;
+            padding: 0 15px;
+            background-color: #f7f7f7;
+        }
+    }
+    .weeksellwell_list{
+        margin-left: -12px;
+        li{
+            float: left;
+            width: 200px;
+            height: 300px;
+            padding: 10px 15px;
+            margin: 0 0 12px 12px;
+            background: white;
+        }
+    }
+}
