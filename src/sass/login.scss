@@ -122,6 +122,7 @@ a {
                     height: 22px;
                     font: 14px/22px "Arial";
                     border: 0 none;
+                    outline: none;
                 }
             }
             .username{
@@ -134,6 +135,10 @@ a {
                 zoom: 1;
                 a{
                     float: right;
+                }
+                a:hover{
+                    color: #c00;
+                    text-decoration: underline;
                 }
                 .mobilelogin-bar{
                     float: left;

@@ -276,9 +276,11 @@ a:hover, .modgoods-list li a:hover, .contact-a:hover, .guide a:hover {
 }
 .selected-goods .order-table .th-4 {
   width: 106px;
+  text-indent: -10px;
 }
 .selected-goods .order-table .th-5 {
   width: 121px;
+  text-indent: -6px;
 }
 .selected-goods .order-table .th-6 {
   width: 107px;
@@ -387,7 +389,7 @@ a:hover, .modgoods-list li a:hover, .contact-a:hover, .guide a:hover {
 }
 .selected-goods .order-table .s-amount {
   width: 130px;
-  padding-left: 33px;
+  padding-left: 31px;
 }
 .selected-goods .order-table .buy-num {
   position: relative;
@@ -432,7 +434,7 @@ a:hover, .modgoods-list li a:hover, .contact-a:hover, .guide a:hover {
 }
 .selected-goods .order-table .s-del {
   border-right: 1px solid #e3e3e3;
-  width: 61px;
+  width: 62px;
 }
 .selected-goods .order-table .s-del .s-delbox {
   position: relative;

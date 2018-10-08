@@ -1,3 +1,12 @@
+a:hover {
+  color: #f33;
+  text-decoration: underline;
+}
+
+img {
+  display: block;
+}
+
 .clearfix:after {
   content: ".";
   display: block;
@@ -42,6 +51,10 @@
   color: #36c;
   text-decoration: none;
 }
+.top .t-home a:hover, .top .t-login a:hover, .top .t-register a:hover {
+  color: #f33;
+  text-decoration: underline;
+}
 .top .top-right {
   float: right;
   margin: 0 -10px 0 0;
@@ -55,11 +68,58 @@
   margin: 0 10px;
   height: 29px;
   font: 12px/29px arial;
+  position: relative;
 }
 .top .top-right li a {
   display: inline-block;
   color: #666;
   text-decoration: none;
+}
+.top .top-right .focus-on {
+  display: none;
+  width: 88px;
+  position: absolute;
+  top: 29px;
+  left: 0;
+  padding: 3px 9px;
+  background: #fff;
+  border: 1px solid #ededed;
+}
+.top .top-right .focus-on .padding0 {
+  display: inline-block;
+  color: #666;
+  text-decoration: none;
+  padding: 0;
+}
+.top .top-right .focus-on .colornum {
+  color: #c00;
+}
+.top .top-right .ewm {
+  display: none;
+  position: absolute;
+  top: 29px;
+  left: 0;
+  padding: 20px;
+  width: 130px;
+  height: 130px;
+  border: 1px solid #ededed;
+  background: #fff;
+}
+.top .top-right .ewm img {
+  width: 130px;
+  height: 130px;
+}
+.top .top-right .phonenum {
+  display: none;
+  position: absolute;
+  top: 29px;
+  right: 0;
+  padding: 3px 9px;
+  width: 80px;
+  border: 1px solid #ededed;
+  font: 12px/28px arial;
+  text-align: right;
+  background: #fff;
 }
 .top .top-right .my-center {
   margin: 0;
@@ -223,6 +283,11 @@
   color: #757575;
   transition: all .2s;
 }
+.search-box .search .search-hot-words a:hover {
+  background: #ec3639;
+  color: #fff;
+  text-decoration: none;
+}
 
 .quick-entry {
   float: right;
@@ -236,6 +301,9 @@
   margin: 0 0 0 20px;
   font: 14px/36px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
   color: #333;
+}
+.quick-entry a:hover {
+  text-decoration: none;
 }
 .quick-entry .order {
   padding: 0 0 0 28px;
@@ -299,6 +367,10 @@
   padding: 0 10px;
   color: #333;
 }
+.nav-box ul li a:hover {
+  color: #f33;
+  text-decoration: none;
+}
 .nav-box ul .redcolor a {
   color: #f33;
 }
@@ -348,9 +420,6 @@
   height: 54px;
   font: 16px/54px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
 }
-.nav-box .category-nav .category-nav-body .item h3 a {
-  color: white;
-}
 .nav-box .category-nav .category-nav-body .item h3 i {
   position: absolute;
   background-position: -44px -154px;
@@ -358,6 +427,23 @@
   height: 11px;
   right: 12px;
   top: 23px;
+}
+.nav-box .category-nav .category-nav-body .item a {
+  color: white;
+}
+.nav-box .category-nav .category-nav-body .hover {
+  margin: -1px 0 0;
+  padding: 0 0 0 51px;
+  border-left: 2px solid #454545;
+  background: #fff;
+  z-index: 2;
+}
+.nav-box .category-nav .category-nav-body .hover a {
+  color: #333;
+}
+.nav-box .category-nav .category-nav-body .hover .icon-01 {
+  background-position: -37px 0;
+  left: 24px;
 }
 .nav-box .category-nav .category-nav-body .icon-01 {
   left: 16px;
@@ -404,6 +490,48 @@
 .nav-box .category-nav i {
   background: url(../images/head.png) no-repeat;
   position: absolute;
+}
+.nav-box .category-nav .category-sub-nav {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 160px;
+  width: 680px;
+  height: 400px;
+  background-color: #fff;
+  z-index: 2;
+  box-shadow: 0 0 8px 0 #ccc;
+}
+.nav-box .category-nav .category-sub-nav-1 {
+  position: relative;
+  padding: 0 30px 30px;
+  height: 370px;
+}
+.nav-box .category-nav .sub-list {
+  padding: 13px 0 0 0;
+}
+.nav-box .category-nav .sub-list li {
+  float: left;
+  height: 28px;
+  line-height: 28px;
+  padding: 0;
+}
+.nav-box .category-nav .sub-list a {
+  display: inline-block;
+  margin: 0 20px 0 0;
+  font: 14px/28px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+}
+.nav-box .category-nav .sub-list a:hover {
+  color: #f33;
+  text-decoration: underline;
+}
+.nav-box .category-nav .sub-banner {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+.nav-box .category-nav .sub-banner img {
+  display: block;
 }
 
 .clearfix:after {
@@ -656,6 +784,18 @@ a {
 a:hover {
   color: #f33;
   text-decoration: underline;
+}
+
+@font-face {
+  font-family: 'iconfont';
+  /* project id 22233 */
+  src: url("//at.alicdn.com/t/font_ktnkt22hrotg9zfr.eot");
+  src: url("//at.alicdn.com/t/font_ktnkt22hrotg9zfr.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_ktnkt22hrotg9zfr.woff") format("woff"), url("//at.alicdn.com/t/font_ktnkt22hrotg9zfr.ttf") format("truetype"), url("//at.alicdn.com/t/font_ktnkt22hrotg9zfr.svg#iconfont") format("svg");
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
 }
 
 .wrapper {
@@ -934,8 +1074,7 @@ a:hover {
   padding-left: 75px;
 }
 .zs-wrap .zs-detail-infor .zs-skin-inner .zs-colour-type {
-  padding: 0 0 0 0;
-  margin-top: 10px;
+  padding: 0;
 }
 .zs-wrap .zs-detail-infor .zs-skin-inner .zs-colour-type dt {
   top: 18px;

@@ -179,6 +179,9 @@ body {
             }
         }
         .tuan-list{
+            ul{
+                display: none;
+            }
             li{
                 float: left;
                 width: 398px;
@@ -195,6 +198,9 @@ body {
             }
             .three {
                 background-color: #e3f9ff;
+            }
+            .red-color{
+                color: #f33;
             }
             .tuan-pro-top{
                 position: relative;
@@ -229,9 +235,6 @@ body {
                     color: #999;
                     em{
                         color: $font-color;
-                    }
-                    .red-color{
-                        color: #f33;
                     }
                 }
                 .tuan-pro-pic{
@@ -286,6 +289,10 @@ body {
                 left: 0;
                 width: 134px;
                 text-align: center;
+                img{
+                    width: 80px;
+                    height: 80px;
+                }
                 .line{
                     padding: 0 6px;
                 }
@@ -326,6 +333,9 @@ body {
                 font: 0/0 arial;
                 overflow: hidden;
                 background-color: #cbcbcb;
+            }
+            .bgchange{
+                background-color: #eb3638;
             }
         }
     }
@@ -540,10 +550,19 @@ body {
             font-size: 14px;
             line-height: 30px;
             text-align: center;
+            a{
+                color: #fff;
+            }
+            a:hover{
+                text-decoration: none;
+            }
         }
         .noopsyche-pro-else{
             height: 18px;
             padding: 0 0 4px;
+            a{
+                color: #fff;
+            }
         }
     }
     .noopsyche-banner{
@@ -619,6 +638,38 @@ body {
     .game-diy{
         .column-hd{
             background-color: #9b74e9;
+        }
+    }
+    .ban-wrapper{
+        position: relative;
+    }
+    .ban-pager{
+        position: absolute;
+        left: 0;
+        bottom: 15px;
+        width: 100%;
+        text-align: center;
+        .pager-item{
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin: 0 4px;
+            a{
+                display: block;
+                width: 10px;
+                height: 10px;
+                font-size: 0;
+                line-height: 0;
+                background-color: #000;
+                opacity: .6;
+                filter: alpha(opacity=60);
+                border-radius: 50%;
+            }
+            .bgred{
+                background-color: #f00;
+                opacity: 1;
+                filter: alpha(opacity=100);
+            }
         }
     }
 }
@@ -799,6 +850,8 @@ body {
                 display: block;
                 img{
                     vertical-align: top;
+                    width: 200px;
+                    height: 200px;
                 }
             }
         }
@@ -954,4 +1007,17 @@ body {
     zoom: 1;
     margin: 0 0 12px;
     background-color: #2d2d2d;
+}
+
+.footer .footer-bottom li {
+    float: left;
+    height: 24px;
+}
+
+.footer .footer-bottom .copyright img {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: -19px;
+    left: 10px;
 }

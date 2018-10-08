@@ -152,6 +152,7 @@ a {
   height: 22px;
   font: 14px/22px "Arial";
   border: 0 none;
+  outline: none;
 }
 .login-index #login-form .login-content .username {
   z-index: 2;
@@ -164,6 +165,10 @@ a {
 }
 .login-index #login-form .login-content .form-other a {
   float: right;
+}
+.login-index #login-form .login-content .form-other a:hover {
+  color: #c00;
+  text-decoration: underline;
 }
 .login-index #login-form .login-content .form-other .mobilelogin-bar {
   float: left;

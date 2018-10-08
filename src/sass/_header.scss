@@ -1,6 +1,11 @@
 $font-color:#333;
 $font-color2:#666;
 
+a:hover{ color:#f33; text-decoration:underline;}
+img{
+    display: block;
+}
+
 .clearfix:after {
     content: ".";
     display: block;
@@ -46,6 +51,11 @@ $font-color2:#666;
             }
         }
     }
+
+    .t-home a:hover, .t-login a:hover, .t-register a:hover{
+        color:#f33;
+        text-decoration:underline;
+    }
     .top-right{
         float: right;
         margin: 0 -10px 0 0;
@@ -58,11 +68,58 @@ $font-color2:#666;
             margin: 0 10px;
             height: 29px;
             font: 12px/29px arial;
+            position: relative;
             a{
                 display: inline-block;
                 color: $font-color2;
                 text-decoration: none;
             }
+        }
+        .focus-on{
+            display: none;            
+            width: 88px;
+            position: absolute;
+            top: 29px;
+            left: 0;
+            padding: 3px 9px;
+            background: #fff;
+            border: 1px solid #ededed;
+            .padding0{
+                display: inline-block;
+                color: #666;
+                text-decoration: none;
+                padding: 0;
+            }
+            .colornum{
+                color: #c00;
+            }
+        }
+        .ewm{
+            display: none;
+            position: absolute;
+            top: 29px;
+            left: 0;
+            padding: 20px;
+            width: 130px;
+            height: 130px;
+            border: 1px solid #ededed;
+            background: #fff;
+            img{
+                width: 130px;
+                height: 130px;
+            }
+        }
+        .phonenum{
+            display: none;            
+            position: absolute;
+            top: 29px;
+            right: 0;
+            padding: 3px 9px;
+            width: 80px;
+            border: 1px solid #ededed;
+            font: 12px/28px arial;
+            text-align: right;
+            background: #fff;
         }
         .my-center{
             margin: 0;
@@ -226,6 +283,11 @@ $font-color2:#666;
                 color: #757575;
                 transition: all .2s;
             }
+            a:hover {
+                background: #ec3639;
+                color: #fff;
+                text-decoration: none;
+            }
         }
     }
 }
@@ -240,6 +302,9 @@ $font-color2:#666;
         margin: 0 0 0 20px;
         font: 14px/36px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
         color:$font-color;
+    }
+    a:hover {
+        text-decoration: none;
     }
     .order{
         padding: 0 0 0 28px;
@@ -302,6 +367,10 @@ $font-color2:#666;
                 padding: 0 10px;
                 color: $font-color;
             }
+            a:hover{
+                color: #f33;
+                text-decoration: none;
+            }
         }
         .redcolor{
             a{
@@ -351,9 +420,6 @@ $font-color2:#666;
                 h3{
                     height: 54px;
                     font: 16px/54px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
-                    a{
-                        color: white;
-                    }
                     i{
                         position: absolute;
                         background-position: -44px -154px;
@@ -362,6 +428,24 @@ $font-color2:#666;
                         right: 12px; 
                         top: 23px;
                     }
+                }
+                a{
+                    color: white;
+                }
+            }
+            .hover{
+                margin: -1px 0 0;
+                padding: 0 0 0 51px;
+                border-left: 2px solid #454545;
+                background: #fff;
+                z-index: 2;
+                a{
+                    color: #333;
+
+                }
+                .icon-01{
+                    background-position: -37px 0;
+                    left: 24px;
                 }
             }
             .icon-01{
@@ -410,6 +494,48 @@ $font-color2:#666;
         i{
             background: url(../images/head.png) no-repeat;
             position: absolute;
+        }
+        .category-sub-nav{
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 160px;
+            width: 680px;
+            height: 400px;
+            background-color: #fff;
+            z-index: 2;
+            box-shadow: 0 0 8px 0 #ccc;
+        }
+        .category-sub-nav-1{
+            position: relative;
+            padding: 0 30px 30px;
+            height: 370px;
+        }
+        .sub-list{
+            padding: 13px 0 0 0;
+            li{
+                float: left;
+                height: 28px;
+                line-height: 28px;
+                padding: 0;
+            }
+            a{
+                display: inline-block;
+                margin: 0 20px 0 0;
+                font: 14px/28px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+            }
+            a:hover {
+                color: #f33;
+                text-decoration: underline;
+            }
+        }
+        .sub-banner{
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            img{
+                display: block;
+            }
         }
     }
 }

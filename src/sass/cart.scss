@@ -235,9 +235,11 @@ $font-color2:#666;
         }
         .th-4 {
             width: 106px;
+            text-indent: -10px;
         }
         .th-5 {
             width: 121px;
+            text-indent: -6px;
         }
         .th-6 {
             width: 107px;
@@ -346,7 +348,7 @@ $font-color2:#666;
         }
         .s-amount {
             width: 130px;
-            padding-left: 33px;
+            padding-left: 31px;
         }
         .buy-num {
             position: relative;
@@ -394,7 +396,7 @@ $font-color2:#666;
                 position: relative;
             }
             border-right: 1px solid #e3e3e3;
-            width: 61px;
+            width: 62px;
             a {
                 display: block;
                 line-height: 20px;

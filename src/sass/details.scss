@@ -18,6 +18,21 @@ img{display: block}
 a{ color:#333; text-decoration:none;}
 a:hover{ color:#f33; text-decoration:underline;}
 
+@font-face {
+    font-family: 'iconfont';  /* project id 22233 */
+    src: url('//at.alicdn.com/t/font_ktnkt22hrotg9zfr.eot');
+    src: url('//at.alicdn.com/t/font_ktnkt22hrotg9zfr.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_ktnkt22hrotg9zfr.woff') format('woff'),
+    url('//at.alicdn.com/t/font_ktnkt22hrotg9zfr.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_ktnkt22hrotg9zfr.svg#iconfont') format('svg');
+  }
+
+  .iconfont {
+    font-family:"iconfont" !important;
+    font-size:16px;
+    font-style:normal;
+  }
+
 
 .wrapper {
     width: 1200px;
@@ -290,8 +305,7 @@ a:hover{ color:#f33; text-decoration:underline;}
                 padding-left: 75px;
             }
             .zs-colour-type {
-                padding: 0 0 0 0;
-                margin-top: 10px;
+                padding: 0;
                 dt {
                     top: 18px;
                     left: 10px;
