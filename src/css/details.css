@@ -402,9 +402,10 @@ img {
   position: absolute;
   top: 39px;
   left: 0;
+  background: #fff;
 }
 .nav-box .category-nav .category-nav-body .category-items {
-  width: 160px;
+  overflow: hidden;
   height: 400px;
   background: #454545;
   position: relative;
@@ -412,7 +413,7 @@ img {
 .nav-box .category-nav .category-nav-body .item {
   height: 54px;
   border-top: 1px solid #4d4d4d;
-  margin: 0 10px 0;
+  margin: -1px 10px 0;
   position: relative;
   padding: 0 0 0 42px;
 }
@@ -444,6 +445,26 @@ img {
 .nav-box .category-nav .category-nav-body .hover .icon-01 {
   background-position: -37px 0;
   left: 24px;
+}
+.nav-box .category-nav .category-nav-body .hover .icon-02 {
+  background-position: -30px -21px;
+  left: 20px;
+}
+.nav-box .category-nav .category-nav-body .hover .icon-03 {
+  background-position: -31px -133px;
+  left: 21px;
+}
+.nav-box .category-nav .category-nav-body .hover .icon-04 {
+  background-position: -30px -40px;
+  left: 20px;
+}
+.nav-box .category-nav .category-nav-body .hover .icon-05 {
+  background-position: -35px -61px;
+  left: 23px;
+}
+.nav-box .category-nav .category-nav-body .hover .icon-06 {
+  background-position: -31px -91px;
+  left: 21px;
 }
 .nav-box .category-nav .category-nav-body .icon-01 {
   left: 16px;
@@ -499,7 +520,7 @@ img {
   width: 680px;
   height: 400px;
   background-color: #fff;
-  z-index: 2;
+  z-index: 3;
   box-shadow: 0 0 8px 0 #ccc;
 }
 .nav-box .category-nav .category-sub-nav-1 {

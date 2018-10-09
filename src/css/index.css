@@ -402,9 +402,10 @@ img {
   position: absolute;
   top: 39px;
   left: 0;
+  background: #fff;
 }
 .nav-box .category-nav .category-nav-body .category-items {
-  width: 160px;
+  overflow: hidden;
   height: 400px;
   background: #454545;
   position: relative;
@@ -412,7 +413,7 @@ img {
 .nav-box .category-nav .category-nav-body .item {
   height: 54px;
   border-top: 1px solid #4d4d4d;
-  margin: 0 10px 0;
+  margin: -1px 10px 0;
   position: relative;
   padding: 0 0 0 42px;
 }
@@ -444,6 +445,26 @@ img {
 .nav-box .category-nav .category-nav-body .hover .icon-01 {
   background-position: -37px 0;
   left: 24px;
+}
+.nav-box .category-nav .category-nav-body .hover .icon-02 {
+  background-position: -30px -21px;
+  left: 20px;
+}
+.nav-box .category-nav .category-nav-body .hover .icon-03 {
+  background-position: -31px -133px;
+  left: 21px;
+}
+.nav-box .category-nav .category-nav-body .hover .icon-04 {
+  background-position: -30px -40px;
+  left: 20px;
+}
+.nav-box .category-nav .category-nav-body .hover .icon-05 {
+  background-position: -35px -61px;
+  left: 23px;
+}
+.nav-box .category-nav .category-nav-body .hover .icon-06 {
+  background-position: -31px -91px;
+  left: 21px;
 }
 .nav-box .category-nav .category-nav-body .icon-01 {
   left: 16px;
@@ -499,7 +520,7 @@ img {
   width: 680px;
   height: 400px;
   background-color: #fff;
-  z-index: 2;
+  z-index: 3;
   box-shadow: 0 0 8px 0 #ccc;
 }
 .nav-box .category-nav .category-sub-nav-1 {
@@ -807,7 +828,7 @@ img {
 
 .b-box .b-pager {
   position: absolute;
-  z-index: 51;
+  z-index: 2;
   left: 50%;
   bottom: 10px;
   width: 1200px;
@@ -973,6 +994,32 @@ body {
   padding: 0 19px;
   background-color: #fff;
 }
+.con-list .item-upward {
+  position: relative;
+  margin-bottom: 10px;
+}
+.con-list .item-upward .pic {
+  padding: 10px 0;
+  display: block;
+}
+.con-list .item-upward img {
+  width: 160px;
+  height: 160px;
+}
+.con-list .ware-name {
+  height: 22px;
+  line-height: 22px;
+  font-size: 14px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.con-list .price {
+  height: 34px;
+  line-height: 34px;
+  font-size: 18px;
+  color: #f33;
+}
 
 .column_brand-item {
   position: relative;
@@ -1023,47 +1070,57 @@ body {
 .groupbuy .section-header {
   background-position: -137px 3px;
 }
-.groupbuy .groupbuy-top {
+.groupbuy .groupbuy {
   height: 174px;
 }
-.groupbuy .groupbuy-top .gb-wrapper {
+.groupbuy .groupbuy .gb-wrapper {
   position: relative;
   zoom: 1;
 }
-.groupbuy .groupbuy-top .gb-wrapper ul {
+.groupbuy .groupbuy .gb-wrapper ul {
   float: left;
   width: 1200px;
   overflow: hidden;
 }
-.groupbuy .groupbuy-top .tuan-list ul {
-  display: none;
+.groupbuy .groupbuy .gb-viewport {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 150px;
 }
-.groupbuy .groupbuy-top .tuan-list li {
+.groupbuy .groupbuy .tuan-list {
+  position: absolute;
+  left: -1200px;
+}
+.groupbuy .groupbuy .tuan-list ul {
+  float: left;
+}
+.groupbuy .groupbuy .tuan-list li {
   float: left;
   width: 398px;
   height: 150px;
   margin: 0 0 0 3px;
   overflow: hidden;
 }
-.groupbuy .groupbuy-top .tuan-list .one {
+.groupbuy .groupbuy .tuan-list .one {
   background-color: #fff6dd;
   margin-left: 0;
 }
-.groupbuy .groupbuy-top .tuan-list .two {
+.groupbuy .groupbuy .tuan-list .two {
   background-color: #ffe5e5;
 }
-.groupbuy .groupbuy-top .tuan-list .three {
+.groupbuy .groupbuy .tuan-list .three {
   background-color: #e3f9ff;
 }
-.groupbuy .groupbuy-top .tuan-list .red-color {
+.groupbuy .groupbuy .tuan-list .red-color {
   color: #f33;
 }
-.groupbuy .groupbuy-top .tuan-list .tuan-pro-top {
+.groupbuy .groupbuy .tuan-list .tuan-pro-top {
   position: relative;
   height: 120px;
   padding: 15px 135px 15px 15px;
 }
-.groupbuy .groupbuy-top .tuan-list .tuan-pro-top h4 {
+.groupbuy .groupbuy .tuan-list .tuan-pro-top h4 {
   height: 22px;
   margin: 3px 0;
   overflow: hidden;
@@ -1072,48 +1129,48 @@ body {
   word-break: break-all;
   word-wrap: break-word;
 }
-.groupbuy .groupbuy-top .tuan-list .tuan-pro-top p {
+.groupbuy .groupbuy .tuan-list .tuan-pro-top p {
   height: 22px;
   overflow: hidden;
   font-size: 14px;
   line-height: 22px;
   color: #999;
 }
-.groupbuy .groupbuy-top .tuan-list .tuan-pro-top .price {
+.groupbuy .groupbuy .tuan-list .tuan-pro-top .price {
   font-size: 14px;
   color: #f33;
   font-family: 'Verdana';
   line-height: 48px;
 }
-.groupbuy .groupbuy-top .tuan-list .tuan-pro-top .price em {
+.groupbuy .groupbuy .tuan-list .tuan-pro-top .price em {
   font-size: 20px;
 }
-.groupbuy .groupbuy-top .tuan-list .tuan-pro-top .time {
+.groupbuy .groupbuy .tuan-list .tuan-pro-top .time {
   color: #999;
 }
-.groupbuy .groupbuy-top .tuan-list .tuan-pro-top .time em {
+.groupbuy .groupbuy .tuan-list .tuan-pro-top .time em {
   color: #333;
 }
-.groupbuy .groupbuy-top .tuan-list .tuan-pro-top .tuan-pro-pic {
+.groupbuy .groupbuy .tuan-list .tuan-pro-top .tuan-pro-pic {
   position: absolute;
   top: 15px;
   right: 15px;
   width: 120px;
   height: 120px;
 }
-.groupbuy .groupbuy-top .tuan-list .tuan-pro-top .tuan-pro-pic img {
+.groupbuy .groupbuy .tuan-list .tuan-pro-top .tuan-pro-pic img {
   vertical-align: middle;
   width: 100%;
   height: 100%;
 }
-.groupbuy .groupbuy-top .tuan-list .tuan-pro-intro {
+.groupbuy .groupbuy .tuan-list .tuan-pro-intro {
   position: relative;
   top: 0;
   height: 117px;
   padding: 18px 15px 15px 150px;
   background: rgba(51, 51, 51, 0.89);
 }
-.groupbuy .groupbuy-top .tuan-list .tuan-pro-intro h4 {
+.groupbuy .groupbuy .tuan-list .tuan-pro-intro h4 {
   height: 28px;
   overflow: hidden;
   font-size: 16px;
@@ -1122,12 +1179,12 @@ body {
   word-break: break-all;
   word-wrap: break-word;
 }
-.groupbuy .groupbuy-top .tuan-list .tuan-pro-intro .price {
+.groupbuy .groupbuy .tuan-list .tuan-pro-intro .price {
   font-size: 14px;
   line-height: 24px;
   color: #fff;
 }
-.groupbuy .groupbuy-top .tuan-list .tuan-pro-intro .go-btn {
+.groupbuy .groupbuy .tuan-list .tuan-pro-intro .go-btn {
   display: block;
   width: 72px;
   height: 28px;
@@ -1139,36 +1196,36 @@ body {
   line-height: 28px;
   text-align: center;
 }
-.groupbuy .groupbuy-top .tuan-list .tuan-pro-picside {
+.groupbuy .groupbuy .tuan-list .tuan-pro-picside {
   position: absolute;
   top: 20px;
   left: 0;
   width: 134px;
   text-align: center;
 }
-.groupbuy .groupbuy-top .tuan-list .tuan-pro-picside img {
+.groupbuy .groupbuy .tuan-list .tuan-pro-picside img {
   width: 80px;
   height: 80px;
 }
-.groupbuy .groupbuy-top .tuan-list .tuan-pro-picside .line {
+.groupbuy .groupbuy .tuan-list .tuan-pro-picside .line {
   padding: 0 6px;
 }
-.groupbuy .groupbuy-top .tuan-list .tuan-pro-picside a {
+.groupbuy .groupbuy .tuan-list .tuan-pro-picside a {
   color: #fff;
 }
-.groupbuy .groupbuy-top .tuan-list .tuan-pro-picside .tuan-pro-pic {
+.groupbuy .groupbuy .tuan-list .tuan-pro-picside .tuan-pro-pic {
   width: 80px;
   height: 80px;
   margin: 0 auto;
   overflow: hidden;
   border-radius: 40px;
 }
-.groupbuy .groupbuy-top .tuan-list .tuan-pro-picside p {
+.groupbuy .groupbuy .tuan-list .tuan-pro-picside p {
   font-size: 12px;
   line-height: 36px;
   color: #fff;
 }
-.groupbuy .groupbuy-top .gb-pager {
+.groupbuy .groupbuy .gb-pager {
   width: 1200px;
   height: 8px;
   padding: 15px 0 0;
@@ -1177,8 +1234,11 @@ body {
   font: 0/0 arial;
   text-align: center;
   text-indent: 1px;
+  position: absolute;
+  left: 0;
+  top: 150px;
 }
-.groupbuy .groupbuy-top .gb-pager li {
+.groupbuy .groupbuy .gb-pager li {
   margin: 0 2px;
   text-indent: 0;
   display: inline;
@@ -1189,14 +1249,38 @@ body {
   font: 0/0 arial;
   overflow: hidden;
   background-color: #cbcbcb;
+  cursor: pointer;
 }
-.groupbuy .groupbuy-top .gb-pager .bgchange {
+.groupbuy .groupbuy .gb-pager .bgchange {
   background-color: #eb3638;
 }
-.groupbuy .coupon-list {
-  margin: 20px 0 0;
+.groupbuy .groupbuy .gb-prev {
+  display: none;
+  position: absolute;
+  top: 51px;
+  width: 35px;
+  height: 50px;
+  cursor: pointer;
+  left: -42px;
+  padding-right: 6px;
+  background: url(../images/zol-home-icons.png) no-repeat 8px 8px;
 }
-.groupbuy .coupon-list li {
+.groupbuy .groupbuy .gb-next {
+  display: none;
+  position: absolute;
+  top: 51px;
+  width: 35px;
+  height: 50px;
+  cursor: pointer;
+  right: -42px;
+  padding-left: 6px;
+  background: url(../images/zol-home-icons.png) no-repeat -26px 8px;
+}
+
+.couponredemption .coupon {
+  margin-top: 20px;
+}
+.couponredemption li {
   position: relative;
   float: left;
   width: 221px;
@@ -1208,7 +1292,7 @@ body {
   -webkit-box-shadow: 1px 0 3px #e8e8e8;
   box-shadow: 1px 0 3px #e8e8e8;
 }
-.groupbuy .coupon-list .all {
+.couponredemption .all {
   width: 137px;
   height: 92px;
   margin-right: 0;
@@ -1219,22 +1303,22 @@ body {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-.groupbuy .coupon-list .all h4 {
+.couponredemption .all h4 {
   font-size: 24px;
   line-height: 33px;
   font-weight: 400;
 }
-.groupbuy .coupon-list .all p {
+.couponredemption .all p {
   font-size: 14px;
   line-height: 21px;
   color: #fcc;
 }
-.groupbuy .coupon-list .all .look {
+.couponredemption .all .look {
   font-size: 14px;
   line-height: 32px;
   color: #fff;
 }
-.groupbuy .coupon-list .ico {
+.couponredemption .ico {
   position: absolute;
   top: 0;
   right: -18px;
@@ -1242,10 +1326,10 @@ body {
   height: 101px;
   background: url(../images/zol-home-icons.png) no-repeat -68px 0;
 }
-.groupbuy .coupon-list .info {
+.couponredemption .info {
   height: 60px;
 }
-.groupbuy .coupon-list .price {
+.couponredemption .price {
   float: left;
   height: 55px;
   width: 111px;
@@ -1260,11 +1344,11 @@ body {
   -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
 }
-.groupbuy .coupon-list .name {
+.couponredemption .name {
   float: right;
   width: 100px;
 }
-.groupbuy .coupon-list .name h5 {
+.couponredemption .name h5 {
   height: 22px;
   padding: 6px 0 0;
   font-size: 14px;
@@ -1272,10 +1356,10 @@ body {
   color: #f66;
   overflow: hidden;
 }
-.groupbuy .coupon-list .name p {
+.couponredemption .name p {
   color: #999;
 }
-.groupbuy .coupon-list .go-get {
+.couponredemption .go-get {
   height: 29px;
   border-top: 1px solid #f3f3f3;
   line-height: 29px;
@@ -1283,10 +1367,10 @@ body {
   line-height: 29px;
   color: #999;
 }
-.groupbuy .coupon-list .go-get a {
+.couponredemption .go-get a {
   color: #f66;
 }
-.groupbuy .coupon-list .go-get a span {
+.couponredemption .go-get a span {
   font-family: simsun;
 }
 
@@ -1342,11 +1426,19 @@ body {
   float: left;
   overflow: hidden;
   zoom: 1;
+  display: block;
+  width: 214px;
+  height: 235px;
 }
 .noopsyche .noopsyche-pics img {
   vertical-align: middle;
   width: 214px;
   height: 235px;
+  transition: all .3s;
+}
+.noopsyche .noopsyche-pics .bigimgbox {
+  width: 428px;
+  height: 182px;
 }
 .noopsyche .noopsyche-pics .bigimg {
   width: 428px;
@@ -1436,6 +1528,21 @@ body {
   margin-left: 12px;
   text-align: center;
   background-color: #fff;
+}
+.brandchoice .brandchoice_list .item .pic {
+  display: block;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+.brandchoice .brandchoice_list .item .pic img {
+  transition: all .3s;
+}
+.brandchoice .brandchoice_list .item:hover {
+  box-shadow: 1px 1px 4px #ccc, -1px 1px 10px #ccc;
+}
+.brandchoice .brandchoice_list .first:hover {
+  box-shadow: none;
 }
 .brandchoice .brandchoice_list .first {
   width: 230px;
@@ -1620,6 +1727,7 @@ body {
 .digital .digital-brand {
   border-top: 1px solid #f7f7f7;
   overflow: hidden;
+  background: #fff;
 }
 .digital .digital-brand .line {
   width: 1px;
@@ -1708,10 +1816,19 @@ body {
   overflow: hidden;
   color: #fff;
   text-align: center;
+  text-decoration: none;
 }
 .navbarfixed .backtop {
   border: 0 none;
   background-color: #5d4949;
+}
+.navbarfixed .trangle {
+  display: inline-block;
+  width: 9px;
+  height: 38px;
+  margin: 0 0 0 4px;
+  vertical-align: top;
+  background: url(../images/zol-home-icons.png) no-repeat -114px 17px;
 }
 .navbarfixed a:hover {
   z-index: 2;

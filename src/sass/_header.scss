@@ -405,8 +405,9 @@ img{
             position: absolute;
             top: 39px; 
             left: 0;
+            background: #fff;
             .category-items{
-                width: 160px;
+                overflow: hidden;
                 height: 400px;
                 background: #454545;
                 position: relative;
@@ -414,7 +415,7 @@ img{
             .item{
                 height: 54px;
                 border-top: 1px solid #4d4d4d;
-                margin: 0 10px 0;
+                margin: -1px 10px 0;
                 position: relative;
                 padding: 0 0 0 42px;
                 h3{
@@ -446,6 +447,26 @@ img{
                 .icon-01{
                     background-position: -37px 0;
                     left: 24px;
+                }
+                .icon-02{
+                    background-position: -30px -21px;
+                    left: 20px;
+                }
+                .icon-03{
+                    background-position: -31px -133px;
+                    left: 21px;
+                }
+                .icon-04{
+                    background-position: -30px -40px;
+                    left: 20px;
+                }
+                .icon-05{
+                    background-position: -35px -61px;
+                    left: 23px;
+                }
+                .icon-06{
+                    background-position: -31px -91px;
+                    left: 21px;
                 }
             }
             .icon-01{
@@ -503,7 +524,7 @@ img{
             width: 680px;
             height: 400px;
             background-color: #fff;
-            z-index: 2;
+            z-index: 3;
             box-shadow: 0 0 8px 0 #ccc;
         }
         .category-sub-nav-1{
