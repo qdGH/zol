@@ -22,7 +22,7 @@
                     还没有Z商城账号？
                 </div>
             </div>
-            <form id="login-form">
+            <form id="login-form"  method="post" onsubmit="return false;">
                 <div class="login-wrap clearfix">
                     <div class="ad">
                         <a href="http://www.zol.com/">
@@ -38,16 +38,16 @@
                         <div class="login-select">
                             <div class="login-content">
                                 <div class="form-item username">
-                                    <input type="text" placeholder="手机号/邮箱/用户名" class="text">
+                                    <input type="text" placeholder="手机号/邮箱/用户名" class="text" name="phonenumber" id="phonenumber" >
                                 </div>
                                 <div class="form-item">
-                                    <input type="text" placeholder="密码" class="text">                                    
+                                    <input type="password" placeholder="密码" class="text" name="password" id="password">                                    
                                 </div>
                                 <div class="form-other clearfix">
                                     <a href="javascript:;" class="mobilelogin-bar">手机动态码登录</a>    
                                     <a href="#" class="forget-password">忘记密码？</a>
                                 </div>      
-                                <input type="button" value="登 录" class="login-btn">                 
+                                <input type="button" value="登 录" class="login-btn" name="submit" id="btn">                 
                             </div>
                             <ul class="cooperation clearfix">
                                 <li class="xian"></li>
@@ -61,9 +61,7 @@
                                 <li><a href="#" class="zhifu"></a></li>
                                 <li><a href="#" class="baidu"></a></li>
                             </ul>
-                        </div>
-                        <!--商家登录-->    
-                        <div class="login-select"></div>                    
+                        </div>        
                     </div>
                 </div>
             </form>
@@ -81,5 +79,8 @@
             <p class="date">©2018. 中关村在线 版权所有</p>
         </div>    
     </div> 
+
+    <script src="script/thirdplugins/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="script/js/login.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>

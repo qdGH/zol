@@ -29,6 +29,7 @@ img{
     border-bottom: 1px solid #e6e6e6;
     .top-left{
         float: left;
+        position: relative;
         .t-home{
             padding: 0 20px 0 0;
             a{
@@ -36,6 +37,24 @@ img{
                 text-decoration: none;
             }
         }
+        .login{
+            width: 220px;
+            height: 30px;
+            position: absolute;
+            left: 71px;
+            top: 0;
+        }
+        .admin{
+            width: 220px;
+            height: 30px;
+            position: absolute;
+            left: 71px;
+            top: 0; 
+        }
+        .user{
+            color: #36c;
+        }
+
         .t-login{
             padding: 0 20px 0 0;
             color: $font-color2;

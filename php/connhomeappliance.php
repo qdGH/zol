@@ -1,7 +1,7 @@
 <?php  
 	require "conn.php";
 
-	$result=mysql_query("select * from sheying");
+	$result=mysql_query("select * from homeappliance");
 		$piclist=array();
 		for($i=0;$i<mysql_num_rows($result);$i++){
 			$piclist[$i]=mysql_fetch_array($result,MYSQLI_ASSOC);

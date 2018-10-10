@@ -31,6 +31,7 @@ img {
 }
 .top .top-left {
   float: left;
+  position: relative;
 }
 .top .top-left .t-home {
   padding: 0 20px 0 0;
@@ -38,6 +39,23 @@ img {
 .top .top-left .t-home a {
   color: #666;
   text-decoration: none;
+}
+.top .top-left .login {
+  width: 220px;
+  height: 30px;
+  position: absolute;
+  left: 71px;
+  top: 0;
+}
+.top .top-left .admin {
+  width: 220px;
+  height: 30px;
+  position: absolute;
+  left: 71px;
+  top: 0;
+}
+.top .top-left .user {
+  color: #36c;
 }
 .top .top-left .t-login {
   padding: 0 20px 0 0;
@@ -1090,7 +1108,7 @@ body {
 }
 .groupbuy .groupbuy .tuan-list {
   position: absolute;
-  left: -1200px;
+  left: 0;
 }
 .groupbuy .groupbuy .tuan-list ul {
   float: left;
@@ -1583,6 +1601,19 @@ body {
 .game .game-hot .column-hd {
   background-color: #7095ee;
 }
+.game .ban-viewport-list {
+  position: relative;
+}
+.game .ban-viewport-list li {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+.game .ban-controls {
+  position: relative;
+  height: 260px;
+}
 .game .game-diy .column-hd {
   background-color: #9b74e9;
 }
@@ -1682,11 +1713,13 @@ body {
 .homeappliance .homeappliance-right .column-hd {
   background-color: #e78c94;
 }
-.homeappliance .homeappliance-right .column-con .cur {
-  display: block;
+.homeappliance .homeappliance-right .column-con {
+  position: relative;
 }
-.homeappliance .homeappliance-right .tab-con {
-  display: none;
+.homeappliance .homeappliance-right .column-con .tab-con {
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .digital .section-header {

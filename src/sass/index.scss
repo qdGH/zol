@@ -216,7 +216,7 @@ body {
         }
         .tuan-list{
             position: absolute;
-            left: -1200px;
+            left: 0;
             ul{
                 float: left;
             }
@@ -726,6 +726,19 @@ body {
             background-color: #7095ee;
         }
     }
+    .ban-viewport-list{
+        position: relative;
+        li{
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: none;
+        }
+    }
+    .ban-controls{
+        position: relative;
+        height: 260px;
+    }
     .game-diy{
         .column-hd{
             background-color: #9b74e9;
@@ -830,12 +843,13 @@ body {
             background-color: #e78c94;
         }
         .column-con{
-            .cur{
-                display: block;
+            position: relative;
+            .tab-con{
+                position: absolute;
+                left: 0;
+                top: 0;
+                
             }
-        }
-        .tab-con{
-            display: none;
         }
     }
 }

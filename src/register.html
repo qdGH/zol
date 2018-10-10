@@ -24,7 +24,7 @@
     </div>
     <div class="content clearfix">
         <p class="title">30秒快速注册，加入Z商城</p>
-        <form id="registerform">
+        <form id="registerform" action="http://10.31.162.72/qd2/zol/php/register.php" method="post">
             <div class="register-module">
                 <div class="register-tab">
                     <div class="phone">
@@ -37,23 +37,10 @@
                             <em class="xh">*</em>
                             手机号：
                         </div>
-                        <input type="text" class="text" name="phone-number">
+                        <input type="text" class="text" name="phonenumber" id="phonenumber">
                         <i class="right-tips"></i>
                         <i class="wrong-tips">请填写手机号码</i>
                         <p class="tips">请填写手机号码</p>
-                    </div>
-                    <div class="register-item">
-                        <div class="lable">
-                            <em class="xh">*</em>
-                            验证码：
-                        </div>
-                        <div class="yz clearfix">
-                            <div id="embed-captcha">
-                                <div class="click-yz"></div>
-                            </div>
-                        </div>
-                        <i class="wrong-tips"></i>
-                        <p class="tips">请完成验证</p>
                     </div>
                     <div class="register-item">
                         <div class="lable">
@@ -72,7 +59,7 @@
                             <em class="xh">*</em>
                             密码：
                         </div>
-                        <input type="text" class="text" name="phone-number">
+                        <input type="password" class="text" name="password" id="password">
                         <i class="right-tips"></i>
                         <i class="wrong-tips">密码不可以包含特殊字符</i>
                         <p class="tips">6-16位字母和数字的组合，不可用特殊字符</p>
@@ -82,7 +69,7 @@
                             <em class="xh">*</em>
                             确认密码：
                         </div>
-                        <input type="text" class="text" name="phone-number">
+                        <input type="password" class="text" name="confirmpass" id="confirmpass">
                         <i class="right-tips"></i>
                         <i class="wrong-tips"></i>
                         <p class="tips">再次输入密码</p>    
@@ -92,7 +79,7 @@
                         <a href="http://help.zol.com/index.php?c=Detail&id=1019" target="_blank">《商城用户协议》</a>    
                         <a href="http://help.zol.com/index.php?c=Detail&id=1022" target="_blank">《隐私权说明》</a>                            
                     </label>   
-                    <input type="button" value="注册" class="register-btn">           
+                    <input type="submit" value="注册" class="register-btn" name="submit">           
                 </div>
             </div>
         </form>
@@ -119,6 +106,9 @@
             </div>
             <p class="date">©2018. 中关村在线 版权所有</p>
         </div>    
-    </div>    
+    </div>  
+    <script src="script/thirdplugins/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="script/thirdplugins/jquery.validate.js" type="text/javascript" charset="utf-8"></script>  
+    <script src="script/js/register.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>

@@ -31,6 +31,7 @@ img {
 }
 .top .top-left {
   float: left;
+  position: relative;
 }
 .top .top-left .t-home {
   padding: 0 20px 0 0;
@@ -38,6 +39,23 @@ img {
 .top .top-left .t-home a {
   color: #666;
   text-decoration: none;
+}
+.top .top-left .login {
+  width: 220px;
+  height: 30px;
+  position: absolute;
+  left: 71px;
+  top: 0;
+}
+.top .top-left .admin {
+  width: 220px;
+  height: 30px;
+  position: absolute;
+  left: 71px;
+  top: 0;
+}
+.top .top-left .user {
+  color: #36c;
 }
 .top .top-left .t-login {
   padding: 0 20px 0 0;
