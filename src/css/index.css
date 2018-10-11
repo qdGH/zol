@@ -1614,6 +1614,9 @@ body {
   position: relative;
   height: 260px;
 }
+.game .homeappliance-goods .con-list {
+  display: none;
+}
 .game .game-diy .column-hd {
   background-color: #9b74e9;
 }
@@ -1716,10 +1719,17 @@ body {
 .homeappliance .homeappliance-right .column-con {
   position: relative;
 }
+.homeappliance .homeappliance-right .column-con .item {
+  height: 257px;
+}
 .homeappliance .homeappliance-right .column-con .tab-con {
   position: absolute;
   left: 0;
   top: 0;
+  display: none;
+}
+.homeappliance .homeappliance-right .column-con .tab-con:nth-of-type(1) {
+  display: block;
 }
 
 .digital .section-header {
@@ -1935,6 +1945,18 @@ body {
   margin: -250px 0 0;
   width: 37px;
   height: 266px;
+}
+.rightbar .tabbox .movetab {
+  position: absolute;
+  width: 68px;
+  background: #f33;
+  font: 12px/37px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  left: -68px;
+  top: 0;
+  display: none;
 }
 .rightbar .tab-ico {
   width: 37px;

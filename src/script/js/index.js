@@ -180,6 +180,7 @@ define(['jquery'],function($){
 				htmlstr+='</ul>';
 				$colhomeappliance.html(htmlstr);
 			});
+
 		}(),
 
 
@@ -247,12 +248,12 @@ define(['jquery'],function($){
 					$address=value.url.split(',');
 					htmlstr+=`<li class="item upward-ware">
 								<div class="upward-region">
-									<a href="http://10.31.162.72/qd2/zol/php/getdata.php?sid=${value.sid}" target="_blank" class="pic">
+									<a href="http://10.31.162.72/qd2/zol/src/details.html?sid=${value.sid}" target="_blank" class="pic">
 										<img src="${$address[0]}" alt="" sid="${value.sid}">	
 									</a>	
 								</div>
 								<p class="ware-name">
-									<a href="#" target="_blank">${value.title}</a>
+									<a href="http://10.31.162.72/qd2/zol/src/details.html?sid=${value.sid}" target="_blank">${value.title}</a>
 								</p>
 								<p class="price">¥${value.price}</p>	
 							</li>`;
@@ -301,7 +302,7 @@ define(['jquery'],function($){
 				if($num<0){
 					$num=2;
 				}
-				bgchange($num);
+				bgchange($num);	
 			});
 		
 			function bgchange(element){
@@ -332,11 +333,13 @@ define(['jquery'],function($){
 			$gbpagerli=$('.gb-controls .gb-pager-item');
 			$gbprev=$('.gb-controls .gb-prev');
 			$gbnext=$('.gb-controls .gb-next');		
-			$num=0;
+			$num1=0;
 			$last=$tuanul.first().clone();
 			$tuanlist.append($last);
 			$first=$tuanul.last().clone();
 			$tuanlist.prepend($first);
+
+			var $bstop=true;
 
 			$tuanlist.css({
 				left:-1200
@@ -365,6 +368,66 @@ define(['jquery'],function($){
 					left:-($(this).index()+1)*1200
 				});
 			});
+
+			$gbnext.on('click',function(){
+				if($bstop){
+					$bstop=false;
+					$num1++;
+					move();
+				}
+			});
+
+			$gbprev.on('click',function(){
+
+				if($bstop){
+					$bstop=false;
+					$num1--;
+					move();
+
+				}
+			});
+			
+		
+
+			var $timer1=setInterval(function(){
+				if($bstop){
+					$bstop=false;
+					$num1++;
+					move();
+				}
+			},3000);
+			
+			$('.brandchoice-inner').hover(function(){
+				clearInterval($timer1);
+			},function(){
+				setInterval(function(){
+					if($bstop){
+						$bstop=false;
+						$num1++;
+						move();
+					}
+				},3000);
+			});
+
+			function move(){
+				$tuanlist.stop(true,true).animate({
+					left:-($num1+1)*1200
+				},800,function(){
+					if($num1==3){
+						$tuanlist.css({left:-1200});
+						$num1=0
+					}
+					if($num1==-1){
+						$tuanlist.css({left:-3600});
+						$num1=2
+					}
+					$gbpagerli.eq($num1).addClass('bgchange').siblings('li').removeClass('bgchange');
+					$bstop=true;
+				});
+				console.log($bstop);
+
+				
+			};
 		
 
 			
@@ -401,25 +464,26 @@ define(['jquery'],function($){
 		gametab:!function(){
 			$tabbtn=$('.game-inner .tab-btn');
 			$banli=$('.ban-viewport-list li');
+			$conlist=$('.homeappliance-goods .con-list')
 			$tabbtn.on('click',function(){
 				$(this).addClass('active').siblings('li').removeClass('active');
 				$banli.eq($(this).index()).show().siblings('li').hide();
+				$conlist.eq($(this).index()).show().siblings('ul').hide();
 			});
+
+
 		}(),
 
 
 		//家电优选tab切换
 		homeappliancetab:!function(){
-			$homeappliancecol=$('.homeappliance-right .column-con');
 			$tabbtn=$('.homeappliance-right .tab-btn');
 			$tabcon=$('.homeappliance-right .tab-con');
 			$homecol=$('.homeappliance-right .column-con');
-			console.log($tabcon.eq(0));
 			$tabbtn.on('click',function(){
 				$(this).addClass('active').siblings('li').removeClass('active');
-				
-			});
-			
+				$('.homeappliance-right .tab-con').eq($(this).index()).show().siblings().hide();
+			});	
 		}(),
 
 		//品牌精选
@@ -504,7 +568,19 @@ define(['jquery'],function($){
 					$('.login').show();
 				});
 			});
+		}(),
 
+		//右侧固定
+		rightbar:!function(){
+			$tool=$('.rightbar .tool');
+			$tool.on('click',function(){
+				$('html,body').animate({
+					scrollTop:0
+				});
+			});
+
+			$tabico=$('.tab-ico');
+			$movetab=$('.movetab');
 
 		}(),
 

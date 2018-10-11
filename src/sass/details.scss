@@ -81,7 +81,7 @@ a:hover{ color:#f33; text-decoration:underline;}
     position: relative;
     margin-bottom: 10px;
     .sf{
-        background: #bbb;
+        background: #fff;
         opacity: 0.3;
         position: absolute;
         left:0;
@@ -101,31 +101,36 @@ a:hover{ color:#f33; text-decoration:underline;}
     overflow: hidden;
     border: 1px solid #ddd;
     background-color: white;
-    display: none;
+    visibility: hidden;
 }
 .bpic{
     position: absolute;
     left:0;
     top:0;
 }
-.detailimg{
-    position: relative;
-    ul{
-        width: 415px;
-        padding: 0 0 0 1px;
-        overflow: hidden;
-    }
+
+.imglist{
+    width: 415px;
+    padding: 0 0 0 1px;
+    overflow: hidden;
     li{
         float: left;
         width: 70px;
         height: 70px;
         margin: 0 12px 0 0;
         position: relative;
+        img{
+            width: 70px;
+            height: 70px;
+            display: block;
+        }
     }
     .border{
         border: 2px solid #c00;
     }
 }
+
+
 
 .zs-action {
     padding: 25px 0;

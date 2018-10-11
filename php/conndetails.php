@@ -1,6 +1,9 @@
 <?php  
 	require "conn.php";
-	$sid=$_GET['sid'];
+
+    $sid=$_GET['sid'];
+    
+    
 	$result=mysql_query("select * from hotsell where sid=$sid");
 	
 	$arrdata=array();
@@ -11,4 +14,5 @@
 	echo json_encode($arrdata);
 
 	
+
 ?>

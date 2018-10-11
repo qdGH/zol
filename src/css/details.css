@@ -886,7 +886,7 @@ a:hover {
   margin-bottom: 10px;
 }
 .spic .sf {
-  background: #bbb;
+  background: #fff;
   opacity: 0.3;
   position: absolute;
   left: 0;
@@ -907,7 +907,7 @@ a:hover {
   overflow: hidden;
   border: 1px solid #ddd;
   background-color: white;
-  display: none;
+  visibility: hidden;
 }
 
 .bpic {
@@ -916,22 +916,24 @@ a:hover {
   top: 0;
 }
 
-.detailimg {
-  position: relative;
-}
-.detailimg ul {
+.imglist {
   width: 415px;
   padding: 0 0 0 1px;
   overflow: hidden;
 }
-.detailimg li {
+.imglist li {
   float: left;
   width: 70px;
   height: 70px;
   margin: 0 12px 0 0;
   position: relative;
 }
-.detailimg .border {
+.imglist li img {
+  width: 70px;
+  height: 70px;
+  display: block;
+}
+.imglist .border {
   border: 2px solid #c00;
 }
 
