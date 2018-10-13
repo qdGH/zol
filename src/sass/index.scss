@@ -1089,19 +1089,27 @@ body {
         margin: -250px 0 0;
         width: 37px;
         height: 266px;
-        .movetab{
-            position: absolute;
-            width: 68px;
-            background: #f33;
-            font: 12px/37px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
-            color: #fff;
-            text-align: center;
-            white-space: nowrap;
-            left: -68px;
-            top: 0;
-            display: none;
-        }
-   
+    }
+    .movetab{
+        position: absolute;
+        width: 68px;
+        background: #f33;
+        font: 12px/37px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+        color: #fff;
+        text-align: center;
+        white-space: nowrap;
+        left: -68px;
+        top: 0;
+        display: none;
+    }
+    .zuji{
+        top:49px;
+    }
+    .shopping{
+        top: 98px;
+    }
+    .youhui{
+        top:147px;
     }
     .tab-ico{
         width: 37px;

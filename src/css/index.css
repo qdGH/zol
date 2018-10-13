@@ -1946,7 +1946,7 @@ body {
   width: 37px;
   height: 266px;
 }
-.rightbar .tabbox .movetab {
+.rightbar .movetab {
   position: absolute;
   width: 68px;
   background: #f33;
@@ -1957,6 +1957,15 @@ body {
   left: -68px;
   top: 0;
   display: none;
+}
+.rightbar .zuji {
+  top: 49px;
+}
+.rightbar .shopping {
+  top: 98px;
+}
+.rightbar .youhui {
+  top: 147px;
 }
 .rightbar .tab-ico {
   width: 37px;

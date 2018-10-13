@@ -55,11 +55,33 @@ define(['jquery'],function($){
 					$login.on('click',function(){
 						location.href='login.html';
 					});
+
+					$searchtext=$('.search-text');
+					$searchlist=$('.search ul');
+					
+					function taobao(data){
+						var taobaoarr=data.result;
+						var htmlstr='';
+						for(var value of taobaoarr){
+							htmlstr+='<li><a href="https://s.taobao.com/search?initiative_id=tbindexz_20170306&ie=utf8&spm=a21bo.2017.201856-taobao-item.2&sourceId=tb.index&search_type=item&ssid=s5-e&commend=all&imgfile=&q='+value[0]+'&suggest=0_3&_input_charset=utf-8&wq=a&suggest_query=a&source=suggest">'+value[0]+'</a></li>';
+						}
+						$searchlist.innerHTML=htmlstr;
+					}
+			
+			
+					$searchtext.oninput=function(){
+					   var sCript=document.createElement('script');
+					   sCript.src='https://suggest.taobao.com/sug?code=utf-8&q='+this.value+'&_ksTS=1536839023997_1203&callback=taobao&k=1&area=c2c&bucketid=1';
+					   document.body.appendChild(sCript); 
+					}
+
+					
 									
 
 				}();
 			});
 		}(),
+
 
 		//尾部效果
 		footer:!function(){
@@ -579,9 +601,19 @@ define(['jquery'],function($){
 				});
 			});
 
-			$tabico=$('.tab-ico');
+			$tabico=$('.tabbox .ico');
 			$movetab=$('.movetab');
-
+			$tabico.hover(function(){
+				$(this).css({
+					backgroundColor:'#f33'
+				});
+				$movetab.eq($(this).index()).show();
+			},function(){
+				$(this).css({
+					backgroundColor:'#333'
+				});
+				$movetab.eq($(this).index()).hide();
+			});
 		}(),
 
 

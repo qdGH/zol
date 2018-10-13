@@ -1,0 +1,24 @@
+{
+  "name": "zol",
+  "version": "1.0.0",
+  "description": "第二阶段项目",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "webpack": "^4.20.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qdGH/zol.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qdGH/zol/issues"
+  },
+  "homepage": "https://github.com/qdGH/zol#readme"
+}

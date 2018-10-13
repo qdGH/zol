@@ -160,6 +160,25 @@ $font-color2:#666;
     }
 }
 
+.shopcar-tip {
+    height: 145px;
+    padding: 45px 0 12px 169px;
+    background: url(http://icon.zol-img.com.cn/zol_shop/order/images_20120628/shopcar.png) no-repeat 60px 45px;
+    dt{
+        font-size: 14px;
+        font-weight: bold;
+        color: #666;
+        line-height: 40px;
+    }
+    dd{
+        line-height: 24px;
+        a{
+            margin: 0 7px;
+        }
+    }
+}
+
+
 .selected-goods{
     .cart-state{
         text-align: right;
@@ -201,8 +220,50 @@ $font-color2:#666;
             background: url(../images/pic1.png) no-repeat -192px -150px;
         }
     }
+    .goods-details-list{
+        width: 976px;
+        margin-top: 5px;
+        border-top: 2px solid #e02d2d;
+        li{
+            height: 36px;
+            background: #f5f5f5;
+            line-height: 36px;
+            font-weight: normal;
+            text-align: center;
+            float: left;
+        }
+        .li-1 {
+            width: 75px;
+        }
+        .li-2 {
+            width: 233px;
+            padding: 0 0 0 50px;
+            text-align: left;
+        }
+        .li-3 {
+            width: 160px;
+        }
+        .li-4 {
+            width: 136px;
+            text-indent: -22px;
+        }
+        .li-5 {
+            width: 133px;
+            text-indent: 6px;
+        }
+        .li-6 {
+            width: 107px;
+        }
+        .li-7 {
+            width: 82px;
+            text-indent: -11px;
+        }
+    }
     .order-table{
         margin-top: 20px;
+        tr{
+            width: 976px;
+        }
         table{
             border-collapse: collapse;
             border-spacing: 0;
@@ -214,42 +275,8 @@ $font-color2:#666;
             line-height: 52px;
             text-align: right;
         }
-        th{
-            height: 36px;
-            background: #f5f5f5;
-            border-top: 2px solid #e02d2d;
-            line-height: 36px;
-            font-weight: normal;
-            text-align: center;
-        }
-        .th-1 {
-            width: 62px;
-        }
-        .th-2 {
-            width: 217px;
-            padding: 0 0 0 100px;
-            text-align: left;
-        }
-        .th-3 {
-            width: 122px;
-        }
-        .th-4 {
-            width: 106px;
-            text-indent: -10px;
-        }
-        .th-5 {
-            width: 121px;
-            text-indent: -6px;
-        }
-        .th-6 {
-            width: 107px;
-        }
-        .th-7 {
-            width: 81px;
-        }
         .store-infor {
             height: 43px;
-            padding: 10px 0 0 0;
             border: 0 none;
             background: #fff;
         }
@@ -293,6 +320,10 @@ $font-color2:#666;
                 line-height: 58px;
                 text-align: center;
                 background: #fff;
+                img{
+                    width: 80px;
+                    height: 80px; 
+                }
             }
             .inforbox {
                 float: left;
